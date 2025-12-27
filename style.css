@@ -1,10 +1,47 @@
-p{
-    font-size: 40px;
+.box{
+    background-color: aqua;
+    padding: 70px;
+    margin: 50px;
+    width: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    transition: transform 0.5s
 }
-body{
-    background-image: url(background.html);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100%;
+
+.box:hover{
+    transform: translateX(250px) rotate(90deg);
+}
+
+.boxAnimation{
+    background-color:blue;
+    padding: 50px;
+    text-align: center;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    animation: animka 2s infinite;
+}
+
+@keyframes animka {
+    0% {
+        transform: translateX(0px) rotate(90deg);
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(360deg);
+    }
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width:600px){
+    
 }
